@@ -91,7 +91,6 @@ document.addEventListener('DOMContentLoaded', function () {
         contactForm.addEventListener('submit', function (event) {
             event.preventDefault();
             showLoader();
-            responseMessage.textContent ='';
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('mail')?.value.trim() || document.getElementById('email')?.value.trim();
             const phone = document.getElementById('mobile')?.value.trim() || document.getElementById('phone')?.value.trim();
